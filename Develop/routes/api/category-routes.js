@@ -58,6 +58,7 @@ router.get('/:id', (req, res) => {
 
   // create a new category
 router.post('/', (req, res) => {
+  console.log('======================');
   Category.create({
     category_name: req.body.category_name
   })
@@ -70,6 +71,7 @@ router.post('/', (req, res) => {
 
 // update a category by its `id` value
 router.put('/:id', (req, res) => {
+  console.log('======================');
   Category.update(
     {
     category_name: req.body.category_name
@@ -89,6 +91,7 @@ router.put('/:id', (req, res) => {
 
 // delete a category by its `id` value
 router.delete('/:id', (req, res) => {
+  console.log('======================');
   Category.destroy({
     where: {
       id:req.params.id
