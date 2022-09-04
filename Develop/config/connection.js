@@ -2,7 +2,7 @@
 const Sequelize = require('sequelize');
 
 // create connection to our database, pass in your MySQL information for username and password
-const sequelize = new Sequelize('ecommerce_db', 'root', 'BibbityWibbity?!4', {
+const sequelize = new Sequelize('ecommerce_db', 'username', 'password', {
   host: 'localhost',
   dialect: 'mysql',
   port: 3306
